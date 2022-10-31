@@ -1,6 +1,3 @@
-# project/tests/test_ping.py
-
-
 from app import main
 
 
