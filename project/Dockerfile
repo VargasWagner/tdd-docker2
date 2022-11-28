@@ -17,6 +17,7 @@ RUN apt-get update \
 RUN pip install --upgrade pip
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
+RUN python -m spacy download es_core_news_sm
 
 # add app
 COPY . .
