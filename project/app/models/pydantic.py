@@ -3,6 +3,9 @@
 
 from pydantic import AnyHttpUrl, BaseModel
 
+class SummaryPayloadSchema(BaseModel):
+    url: AnyHttpUrl
+
 
 class SummaryPayloadSchema(BaseModel):
     url: AnyHttpUrl
